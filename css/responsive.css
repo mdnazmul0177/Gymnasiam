@@ -206,6 +206,11 @@
 /* partner part end */
 
 /* footer start */
+
+#footer_part .overlay .texts ul{
+    margin-left: 0;
+}
+
 #footer_part .fliker{
     text-align: center;
     margin: 30px 0;
@@ -730,7 +735,7 @@
     width: 118px;
     margin: 0 auto;
 }
-}
+
 
 
 /* class end */
