@@ -1,0 +1,1246 @@
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                    common css start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol,li{
+    list-style: none;
+}
+a,a:hover,a:focus{
+    text-decoration: none;
+}
+
+.title{
+    text-align: center;
+}
+.title h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    color: #222222;
+    text-transform: uppercase;
+}
+
+clr{
+    clear: both;
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                    common css end
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                    navbar css start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+nav{
+    background: rgba(53, 53, 53,.25);
+    padding: 0 !important;
+    position: absolute !important;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+nav .navbar-brand{
+    padding: 0;
+    width: 200px;
+    height: 80px;
+    background: #323232;
+    text-align: center;
+    line-height: 75px;
+    position: absolute;
+    transform: skewX(-40deg);
+    border-left: 5px solid #000;
+    border-right: 5px solid #000;
+}
+
+nav .navbar-brand img{
+    transform: skewX(40deg);
+}
+
+nav .ami{
+    color: #e23e38;
+}
+
+nav ul li a{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    background: transparent;
+    padding: 20px 10px !important;
+    margin-left: 10px;
+    position: relative;
+    transition: .4s;
+}
+
+nav ul li a:after{
+    width: 0%;
+    height: 3px;
+    background: #e23e38;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    transition: .4s;
+}
+
+nav ul li a:hover{
+    background: #fff;
+    color: #222222;
+}
+
+nav ul li a:hover:after{
+    width: 100%;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                    navbar css end
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                    banner css start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#banner_part .banner{
+    background: url(../images/banner.png) no-repeat center;
+    background-size: cover;
+}
+
+#banner_part .banner .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0,.6);
+    text-align: center;
+    padding-top: 260px;
+    padding-bottom: 120px;
+}
+
+#banner_part .banner .text{
+    width: 540px;
+    margin: 0 auto;
+}
+
+#banner_part .banner .text h3{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#banner_part .banner .text h3:after{
+    width: 166px;
+    height: 2px;
+    background: #e23e38;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    content: "";
+}
+
+#banner_part .banner .text h3:before{
+    width: 124px;
+    height: 2px;
+    background: #e23e38;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    content: "";
+}
+
+#banner_part .banner .text h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: #e23e38;
+    text-transform: uppercase;
+    margin: 20px 0;
+    position: relative;
+}
+
+#banner_part .banner .text h1:after{
+    width: 2px;
+    height: 220px;
+    background: #e23e38;
+    position: absolute;
+    top: -37px;
+    left: 0;
+    content: "";
+}
+
+#banner_part .banner .text h1:before{
+    width: 2px;
+    height: 220px;
+    background: #e23e38;
+    position: absolute;
+    top: -37px;
+    right: 0;
+    content: "";
+}
+
+#banner_part .banner .text p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #dddddd;
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#banner_part .banner .text p:after{
+    width: 50px;
+    height: 2px;
+    background: #e23e38;
+    position: absolute;
+    bottom: -53px;
+    left: -20px;
+    content: "";
+}
+
+#banner_part .banner .text p:before{
+    width: 20px;
+    height: 2px;
+    background: #e23e38;
+    position: absolute;
+    bottom: -53px;
+    right: -20px;
+    content: "";
+}
+
+#banner_part .banner .text a{
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    transition: .4s;
+}
+
+#banner_part .banner .text a:hover{
+    background: #e23e38;
+    border-color: #e23e38;
+}
+
+#banner_part ul{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#banner_part ul li{
+    display: inline-block;
+    margin: 10px;
+}
+
+#banner_part ul li button{
+    width: 12px;
+    height: 12px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 0;
+    cursor: pointer;
+    outline: 0;
+    transition: .4s;
+}
+
+#banner_part ul li.slick-active button{
+    background: #e23e38;
+    border-color: #e23e38;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                    banner css end
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                    about css start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#about_part{
+    margin-top: 80px;
+}
+
+#about_part .img{
+    position: relative;
+}
+
+#about_part .img img{
+    width: 100%;
+}
+
+#about_part .img .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#about_part .img .overlay i{
+    font-size: 56px;
+    color: #e23e38;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+#about_part .title{
+    text-align: center;
+}
+
+#about_part .text{
+    text-align: center;
+}
+
+#about_part .text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+    width: 525px;
+    line-height: 24px;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                    about css end
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                    gallery css end
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#gallery-part{
+    margin-top: 80px;
+}
+
+#gallery-part .gallery{
+    background: url(../images/banner2.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 30px;
+}
+
+#gallery-part .gallery .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,.6);
+}
+
+#gallery-part .gallery .overlay .slider .img{
+    position: relative;
+    margin-left: 30px;
+}
+
+#gallery-part .gallery .overlay .slider .two{
+    margin-bottom: 30px;
+}
+
+#gallery-part .gallery .overlay .slider .img img{
+width: 100%;
+height: 100%;
+margin-top: 30px;
+display: block;
+/* margin-left: 30px; */
+}
+
+#gallery-part .gallery .overlay .slider .img .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(226, 62, 56, 0.603);
+    border: 2px solid rgba(255, 255, 255, 0.603);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: .4s;
+}
+
+#gallery-part .gallery .overlay .slider .img:hover .overlay i{
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: .4s;
+}
+
+#gallery-part .gallery .overlay .slider .img:hover .overlay{
+    transform: scale(.9);
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                    gallery css end
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                    team css start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#team_part{
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+#team_part .team_slider .member{
+    margin-top: 60px;
+    margin-bottom: 15px;
+    transition: .5s;
+}
+
+#team_part .team_slider .member .img{
+    width: 100%;
+    position: relative;
+    top: 15px;
+    transition: .5s;
+}
+
+#team_part .team_slider .member .img img{
+    width: 100%;
+}
+
+#team_part .team_slider .member .img .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(226, 62, 56, 0.603);
+    border: 5px solid rgba(255, 255, 255, 0.603);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: .5s;
+}
+
+#team_part .team_slider .member .img .overlay .icon{
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+#team_part .team_slider .member .img .overlay a i{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    border: 1px solid #fff;
+    background: transparent;
+    margin-top: 10px;
+    transition: .5s;
+}
+
+#team_part .team_slider .member .img .overlay .icon i:hover{
+    background: #fff;
+    color: #1da0f2;
+}
+
+#team_part .team_slider .member .text{
+    text-align: center;
+    border: 2px solid transparent ;
+    border-top: 0;
+    padding: 20px 0;
+    transition: .5s;
+    top: 15px;
+    position: relative;
+}
+
+#team_part .team_slider .member .text h4{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #444444;
+    text-transform: uppercase;
+}
+
+#team_part .team_slider .member .text .degi{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #444444;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+#team_part .team_slider .member .text .details{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #444444;
+    width: 234px;
+    margin: 0 auto;
+    opacity: 0;
+    transition: .5s;
+    z-index: -10;
+}
+
+#team_part .team_slider .member:hover .img{
+    top: 0;
+}
+
+#team_part .team_slider .member:hover .img .overlay{
+    transform: scale(.9);
+}
+
+#team_part .team_slider .member:hover .text{
+    padding-bottom: 80px;
+    top: 0;
+    border: 2px solid #dddddd;
+    border-top: 0;
+}
+
+#team_part .team_slider .member:hover .text .details{
+    top: 64px;
+    opacity: 1;
+    z-index: 99;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                    team css end
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                    testi css start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#testi_part{
+    position: relative;
+}
+
+#testi_part .testimonial{
+    background: url(../images/banner3.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 30px;
+}
+
+#testi_part .testimonial .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.603);
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+#testi_part .testimonial .overlay .t-slider{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* #testi_part .testimonial .overlay .item{
+    display: flex;
+    justify-content: space-between;
+} */
+
+#testi_part .testimonial .overlay .left{
+    width: 49%;
+    
+}
+
+#testi_part .testimonial .overlay .left .img{
+    display: flex;
+}
+
+#testi_part .testimonial .overlay .left .img .one{
+    width: 15%;
+}
+
+#testi_part .testimonial .overlay .left .img .one img{
+    width: 100%;
+}
+
+#testi_part .testimonial .overlay .left .img .two{
+    width: 85%;
+    margin-left: 10px;
+}
+
+#testi_part .testimonial .overlay .left .img .two h4{
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#testi_part .testimonial .overlay .left .img .two p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+
+#testi_part .testimonial .overlay .left .img .two i{
+    display: inline-block;
+    font-size: 14px;
+    color: #e23e38;
+}
+
+#testi_part .testimonial .overlay .left .text{
+    margin-top: 10px;
+}
+
+#testi_part .testimonial .overlay .left .text p{
+    width: 550px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 18px;
+}
+
+
+#testi_part .testimonial .overlay .right{
+    width: 49%;
+}
+
+
+#testi_part .testimonial .overlay .right .img{
+    display: flex;
+}
+
+#testi_part .testimonial .overlay .right .img .one{
+    width: 15%;
+}
+
+#testi_part .testimonial .overlay .right .img .one img{
+    width: 100%;
+}
+
+#testi_part .testimonial .overlay .right .img .two{
+    width: 85%;
+    margin-left: 10px;
+}
+
+#testi_part .testimonial .overlay .right .img .two h4{
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#testi_part .testimonial .overlay .right .img .two p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+
+#testi_part .testimonial .overlay .right .img .two i{
+    display: inline-block;
+    font-size: 14px;
+    color: #e23e38;
+}
+
+#testi_part .testimonial .overlay .right .text{
+    margin-top: 10px;
+}
+
+#testi_part .testimonial .overlay .right .text p{
+    width: 550px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 18px;
+}
+
+#testi_part ul{
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#testi_part ul li{
+    display: inline-block;
+    margin: 10px;
+}
+
+#testi_part ul li button{
+    width: 12px;
+    height: 12px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 0;
+    cursor: pointer;
+    outline: 0;
+    transition: .4s;
+}
+
+#testi_part ul li.slick-active button{
+    background: #e23e38;
+    border-color: #e23e38;
+}
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                    testi css end
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                    member css end
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#member_part{
+    margin-top: 80px;
+}
+
+#member_part .title{
+    margin-bottom: 30px;
+}
+
+#member_part .item{
+    cursor: pointer;
+}
+
+#member_part .item .top{
+    width: 100%;
+    background: #dddddd;
+    text-align: center;
+    padding: 20px 0;
+    transition: .4s;
+}
+
+#member_part .item .top p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #222222;
+    text-transform: uppercase;
+    transition: .4s;
+}
+
+#member_part .item .pic{
+    background: url(../images/mem-1.png) no-repeat center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+#member_part .item .picc{
+    background: url(../images/mem-2.png) no-repeat center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+#member_part .item .piccc{
+    background: url(../images/mem-3.png) no-repeat center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+#member_part .item .pic .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.603);
+    padding: 30px 0;
+}
+
+#member_part .item .picc .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.603);
+    padding: 30px 0;
+}
+
+#member_part .item .piccc .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.603);
+    padding: 30px 0;
+}
+
+#member_part .item .pic .overlay p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#member_part .item .pic .overlay span{
+    font-size: 25px;
+}
+
+#member_part .item .picc .overlay p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#member_part .item .picc .overlay span{
+    font-size: 25px;
+}
+
+#member_part .item .piccc .overlay p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#member_part .item .piccc .overlay span{
+    font-size: 25px;
+}
+
+#member_part .item .text{
+    text-align: center;
+}
+
+#member_part .item .text .op{
+    margin-top: 40px;
+}
+
+#member_part .item .text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #444444;
+    margin: 20px 0;
+}
+    
+#member_part .item .btm{
+    width: 100%;
+    background: #dddddd;
+    text-align: center;
+    padding: 10px 0;
+    transition: .4s;
+}
+
+#member_part .item .btm a{
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #222222;
+    text-transform: uppercase;
+    transition: .4s;
+}
+
+#member_part .item:hover .top{
+    background: #e23e38;
+}
+
+#member_part .item:hover .top p{
+    color: #fff;
+}
+
+#member_part .item:hover .btm{
+    background: #e23e38;
+}
+
+#member_part .item:hover .btm a{
+    color: #fff;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                    member css end
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                    counter css start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+#counter_part{
+    background: url(../images/counter.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 80px;
+}
+
+#counter_part .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.603);
+    padding: 45px 0;
+}
+
+#counter_part .overlay .count h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#counter_part .overlay .count p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                    counter css end
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                    class css start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#class_part{
+    margin-top: 80px;
+}
+
+#class_part .colorful-tab-wrapper{
+    width: 100%;
+    background: transparent !important;
+    transition: .4s;
+}
+
+#class_part .colorful-tab-menu{
+    background: #dddddd;
+    
+}
+
+#class_part .colorful-tab-menu .active{
+    background: #e23e38;
+    transition: .4s !important;
+}
+
+#class_part .colorful-tab-menu a{
+    color: #fff;
+}
+
+#class_part .colorful-tab-menu-item a{
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #222222;
+    text-transform: uppercase;
+}
+
+#class_part .colorful-tab-content{
+    color: #000;
+}
+
+#class_part .colorful-tab-wrapper:before{
+    color: #000;
+}
+
+#class_part .colorful-tab-content ul li{
+    width: 19.5%;
+    background: #dddddd;
+    text-align: center;
+    padding: 45px 0;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    transition: .4s;
+}
+
+#class_part .colorful-tab-content ul li .pt{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444444;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+
+#class_part .colorful-tab-content ul li p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+    transition: .4s;
+}
+#class_part .colorful-tab-content ul li i{
+    color: #444444;
+    font-size: 50px;
+    transition: .4s;
+}
+
+#class_part .colorful-tab-content ul li:hover{
+    background: #e23e38;
+    cursor: pointer;
+}
+
+#class_part .colorful-tab-content ul li:hover p{
+    color: #fff;
+}
+
+#class_part .colorful-tab-content ul li:hover i{
+    color: #fff;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                    class css end
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                    logo css start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+#partnet-part {
+    margin-top: 80px;
+}
+
+#partnet-part .logo {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+
+}
+
+
+#partnet-part .logo .img {
+    width: 90%;
+    height: 100px;
+    
+    background: #f1f1f1;
+    padding: 30px 15px;
+    box-sizing: border-box;
+}
+
+#partnet-part .logo .img img{
+    width: 100%;
+    margin-top: 8px;
+}
+
+#partnet-part .logo .img .slick-center {
+    border: 3px solid red !important;
+}
+
+.leftarrow {
+    font-size: 28px;
+    color: #444444;
+    position: absolute;
+    top: 35%;
+    left: -40px;
+    z-index: 1;
+    transition: .4s;
+}
+
+.rightarrow {
+    font-size: 28px;
+    color: #444444;
+    position: absolute;
+    top: 35%;
+    right: -50px;
+    z-index: 1;
+    transition: .4s;
+}
+
+.leftarrow:hover {
+    color: #e23e38;
+}
+
+.rightarrow:hover {
+    color: #e23e38;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                    logo css end
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                    footer css start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#footer_part{
+    margin-top: 80px;
+    background: url(../images/footer-img.png) no-repeat center;
+    background-size: cover;
+}
+
+#footer_part .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.603);
+}
+
+#footer_part .overlay .img{
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 2px solid #f1f1f1;
+    margin-bottom: 30px;
+}
+
+/* #footer_part .overlay .texts{
+    margin-bottom: 30px;
+} */
+
+#footer_part .overlay h5{
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+#footer_part .overlay .texts ul li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #dddddd;
+    position: relative;
+    margin-top: 5px;
+}
+
+#footer_part .overlay .texts ul li span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%;
+} 
+
+#footer_part .overlay .detail{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#footer_part .overlay .detail .icon{
+    display: inline-block;
+    color: #1da0f2;
+    font-size: 22px;
+}
+
+#footer_part .overlay .detail p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #dddddd;
+    line-height: 18px;
+    margin-left: 10px;
+}
+
+#footer_part .overlay .detail span{
+    font-weight: 800;
+    display: block;
+}
+
+#footer_part .overlay .detail2{
+    display: flex;
+}
+
+#footer_part .overlay .detail2 .icon{
+    display: inline-block;
+    color: #1da0f2;
+    font-size: 22px;
+}
+
+#footer_part .overlay .detail2 p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #dddddd;
+    line-height: 18px;
+    margin-left: 10px;
+}
+
+#footer_part .overlay .detail2 span{
+    font-weight: 800;
+    display: block;
+}
+
+#footer_part .overlay .fliker img{
+    
+    margin-bottom: 5px;
+}
+
+#footer_part .overlay .contac ul{
+    margin-bottom: 10px;
+}
+
+#footer_part .overlay .contac ul li{
+    display: inline-block;
+    position: relative;
+
+}
+
+#footer_part .overlay .contac ul li i{
+    color: #e23e38;
+    font-size: 14px;
+    position: absolute;
+    top: -12px;
+    left: 0;
+    
+}
+
+#footer_part .overlay .contac .location{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #dddddd;
+    width: 235px;
+    margin-left: 15px;
+}
+
+#footer_part .overlay .contac .social h5{
+    margin-bottom: 25px;
+}
+
+#footer_part .overlay .contac .social a{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    border: 1px solid #f1f1f1;
+    color: #f1f1f1;
+    padding: 15px 15px;
+    margin-left: 5px;
+    position: relative;
+    transition: .4s;
+}
+
+#footer_part .overlay .contac .social a i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#footer_part .overlay .contac .social a:hover{
+    background: #e23e38;
+    border-color: #e23e38;
+}
+
+#footer_part .overlay .fbottom{
+    text-align: center;
+    color: #f1f1f1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 10px 0;
+    border-top: 2px solid #f1f1f1;
+    margin-top: 30px;
+}
+
+#footer_part .overlay .fbottom span{
+    color: #e23e38;
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                    footer css end
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
